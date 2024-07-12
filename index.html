@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Narges Mohammadi Academic Website</title>
+    <title>My Academic Website</title>
     <link rel="stylesheet" href="css/styles.css">
     <style>
         body {
@@ -33,6 +33,21 @@
         .container {
             padding: 2em;
         }
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: left;
+        }
+        .header-content img {
+            border-radius: 50%;
+            margin-right: 20px;
+            width: 150px;
+            height: 150px;
+        }
+        .header-content div {
+            max-width: 600px;
+        }
         .research, .publications, .contact {
             margin-bottom: 2em;
         }
@@ -43,8 +58,14 @@
 </head>
 <body>
     <header>
-        <h1>Narges Mohammadi</h1>
-        <img src="Narges-PWP.jpg" alt="My Profile Picture" style="width:150px;height:auto;">
+        <div class="header-content">
+            <img src="Narges-PWP.jpg" alt="My Profile Picture">
+            <div>
+                <h1>Narges Mohammadi</h1>
+                <p>PhD Candidate, Analytics and Operations Department</p>
+                <p>Imperial College Business School</p>
+            </div>
+        </div>
     </header>
     <nav>
         <ul>
@@ -73,7 +94,7 @@
         </section>
         <section class="contact">
             <h2>Contact</h2>
-            <p>You can reach me at <a href="mailto:john.doe@example.com">john.doe@example.com</a>.</p>
+            <p>You can reach me at <a href="mailto:n.mohammadi19@imperial.ac.uk">john.doe@example.com</a>.</p>
         </section>
     </div>
     <footer>
