@@ -1,58 +1,81 @@
-body {
+/* Reset some default styling */
+body, h1, h2, p {
     margin: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
+    padding: 0;
 }
 
+/* Basic styling */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+/* Sidebar styling */
 .sidebar {
     width: 250px;
-    background: #333;
+    background: #4a4a4a;
     color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.profile img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-}
-
-.profile h1 {
-    font-size: 1.5em;
-    margin: 10px 0 5px;
-}
-
-.profile p {
+.sidebar .profile {
     text-align: center;
-    margin: 5px 0;
+    margin-bottom: 20px;
 }
 
-nav ul {
+.sidebar .profile img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.sidebar .profile h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.sidebar .profile p {
+    font-size: 0.9em;
+}
+
+.sidebar nav ul {
     list-style: none;
     padding: 0;
-    width: 100%;
-    text-align: center;
 }
 
-nav ul li {
-    margin: 10px 0;
+.sidebar nav ul li {
+    margin: 15px 0;
 }
 
-nav ul li a {
+.sidebar nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.1em;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+.sidebar nav ul li a:hover {
+    background: #575757;
 }
 
+/* Main content styling */
 .content {
-    flex-grow: 1;
+    flex: 1;
     padding: 20px;
 }
 
@@ -67,5 +90,6 @@ nav ul li a:hover {
 }
 
 .content p {
-    font-size: 1.2em;
+    font-size: 1.1em;
+    margin-bottom: 20px;
 }
