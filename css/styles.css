@@ -201,3 +201,31 @@ body {
     background: #004080; /* Dark blue background for CV link */
     color: #ffffff; /* White text color */
 }
+
+
+/* Styling for contact section */
+.contact {
+    margin-top: 20px;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    color: #000000; /* Black text color */
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.contact-link img {
+    width: 24px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 10px;
+}
+
+.contact-link:hover {
+    color: #005bb5; /* Change color on hover */
+}
+
+.contact-link img {
+    border-radius: 50%; /* Optional: Round icons */
+}
