@@ -65,50 +65,58 @@ body {
     font-size: 1em;
 }
 
-.sidebar nav ul {
-    list-style: none;
-    padding: 0;
-    width: 100%;
-}
-
-.sidebar nav ul li {
-    margin: 10px 0;
-}
-
-.sidebar nav ul li a {
-    color: #003399; /* Imperial Blue color for links */
-    text-decoration: none;
-    font-size: 1.1em;
-    display: block;
-    padding: 10px;
-    border-radius: 5px;
-    transition: background 0.3s;
-    text-align: center;
-}
-
-.sidebar nav ul li a:hover {
-    background: #e0e0e0; /* Light grey background on hover */
-}
-
 /* Main content styling */
 .content {
     flex: 1;
-    padding: 40px;
+    padding: 0 20px;
     background: #ffffff; /* White background */
+    display: flex;
+    flex-direction: column;
 }
 
-.content section {
-    max-width: 800px;
-    margin: 0 auto;
+.nav-top {
+    background: #003399; /* Imperial Blue background for the top nav */
+    padding: 10px 20px;
 }
 
-.content h2 {
+.nav-top nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-top nav ul li {
+    margin: 0 15px;
+}
+
+.nav-top nav ul li a {
+    color: #ffffff; /* White color for links */
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.nav-top nav ul li a:hover {
+    background: #005bb5; /* Slightly darker blue on hover */
+}
+
+/* Main content section */
+.home {
+    flex: 1;
+    padding: 40px;
+}
+
+.home h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
     color: #003399; /* Imperial Blue color for headings */
 }
 
-.content p {
+.home p {
     font-size: 1.2em;
     margin-bottom: 20px;
     color: #555;
@@ -145,11 +153,19 @@ body {
         font-size: 0.9em;
     }
 
-    .content h2 {
+    .home h2 {
         font-size: 2em;
     }
 
-    .content p {
+    .home p {
         font-size: 1em;
+    }
+
+    .nav-top nav ul {
+        flex-direction: column;
+    }
+
+    .nav-top nav ul li {
+        margin: 10px 0;
     }
 }
