@@ -50,13 +50,18 @@
 /* Contact Section Styles */
 .contact {
     margin-top: 20px;
-    display: flex;
-    justify-content: center; /* Center logos horizontally */
-    gap: 20px; /* Space between icons */
+    text-align: center; /* Center text and logos */
+}
+
+.contact h2 {
+    color: #005bb5; /* Template blue color for the title */
+    font-size: 1.2em;
+    margin-bottom: 15px;
 }
 
 .contact-link {
     display: inline-block;
+    margin: 0 10px; /* Space between icons */
 }
 
 .contact-link img {
