@@ -204,28 +204,24 @@ body {
 
 
 /* Styling for contact section */
+/* Styling for contact section */
 .contact {
     margin-top: 20px;
+    display: flex;
+    gap: 15px; /* Space between icons */
 }
 
 .contact-link {
-    display: flex;
-    align-items: center;
-    color: #000000; /* Black text color */
-    text-decoration: none;
-    margin-bottom: 10px;
+    display: inline-block;
 }
 
 .contact-link img {
     width: 24px; /* Adjust size as needed */
-    height: auto;
-    margin-right: 10px;
+    height: 24px; /* Adjust size as needed */
+    vertical-align: middle; /* Align icons vertically in the middle */
+    transition: opacity 0.3s;
 }
 
-.contact-link:hover {
-    color: #005bb5; /* Change color on hover */
-}
-
-.contact-link img {
-    border-radius: 50%; /* Optional: Round icons */
+.contact-link img:hover {
+    opacity: 0.7; /* Slightly transparent on hover */
 }
